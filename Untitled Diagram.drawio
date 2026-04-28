@@ -1,0 +1,126 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="tBn2bXDjiWddATLDbODA">
+    <mxGraphModel dx="6707" dy="5562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_6yHBerBYXMI28eIKHfv-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="UI" vertex="1">
+          <mxGeometry height="60" width="120" x="50" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-2" edge="1" parent="1" source="_6yHBerBYXMI28eIKHfv-1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="170" y="210" as="sourcePoint" />
+            <mxPoint x="620" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Splat (Authentication)" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-5" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="UseKievIn&lt;br&gt;Memory: false" vertex="1">
+          <mxGeometry height="100" width="60" x="630" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-6" edge="1" parent="1" source="_6yHBerBYXMI28eIKHfv-26" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.413;exitY=0.981;exitDx=0;exitDy=0;exitPerimeter=0;" target="_6yHBerBYXMI28eIKHfv-5" value="Kiev (Key Value Pair DB)">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="300" />
+              <mxPoint x="660" y="390" />
+            </Array>
+            <mxPoint x="670" y="230" as="sourcePoint" />
+            <mxPoint x="673.98" y="431.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Authentication Mode is OCI Signature" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Language&lt;br&gt;Service&lt;div&gt;(Retry, CircuitBreaker)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="610" y="-80" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="_6yHBerBYXMI28eIKHfv-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="160" />
+            </Array>
+            <mxPoint x="670" y="160" as="sourcePoint" />
+            <mxPoint x="440" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Async Processing&lt;br&gt;call OCI Language Service SDK using primary &amp;amp; secondary client parallely&lt;div&gt;one which sends response first we will get&lt;br&gt;API detectNamedEntities&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Retry Will do 3 times&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="250" x="770" y="-110" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-13" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="/feedback&amp;nbsp;&lt;div&gt;{POST,LIST}&lt;br&gt;&lt;br&gt;headers:&amp;nbsp;&lt;/div&gt;&lt;div&gt;opc-request-id&lt;/div&gt;&lt;div&gt;opc-next-page&lt;/div&gt;&lt;div&gt;opc-previous-page&lt;br&gt;&lt;br&gt;routing strategy route to any AD&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="170" x="110" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-14" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="&lt;div&gt;ehCache&lt;/div&gt;&lt;div&gt;ToKiev&lt;/div&gt;&lt;div&gt;Data&lt;/div&gt;&lt;div&gt;Transfer&lt;/div&gt;&lt;div&gt;Job:&lt;/div&gt;&lt;div&gt;&amp;nbsp;&quot;30min&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="90" x="440" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-15" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="80" width="80" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-17" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Metrics&lt;br&gt;T2 populate to grafana&lt;br&gt;Jitter :100&lt;br&gt;&lt;br&gt;endpointOverride: &quot;https://telemetry.&lt;div&gt;&quot;${env.iaasDomainName}&quot;:443/v1/public&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="130" x="827" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-18" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="MinThread:&lt;div&gt;1&lt;div&gt;MaxThread:&lt;/div&gt;&lt;div&gt;1024&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="75" x="720" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-20" edge="1" parent="1" source="_6yHBerBYXMI28eIKHfv-29" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=32.5;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="_6yHBerBYXMI28eIKHfv-5" value="Sync Data&amp;nbsp;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="440" />
+            </Array>
+            <mxPoint x="560" y="390" as="sourcePoint" />
+            <mxPoint x="470" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-21" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" target="_6yHBerBYXMI28eIKHfv-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="90" />
+              <mxPoint x="800" y="70" />
+              <mxPoint x="810" y="90" />
+            </Array>
+            <mxPoint x="680" y="160" as="sourcePoint" />
+            <mxPoint x="790" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&quot;POST&quot;: [&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;resource&quot;: &quot;FEEDBACK&quot;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;url&quot;: &quot;http://localhost:24002/20210801/feedback&quot;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;expected_response_code&quot;: [&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 200,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 409&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ],&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;payload&quot;:&amp;nbsp; {&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;product&quot; : {&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;source&quot; : &quot;DOCUMENT&quot;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;component&quot; : &quot;cfs&quot;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;category&quot; : &quot;test&quot;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;subCategory&quot; : &quot;Others&quot;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;referenceId&quot; : &quot;Not Provided&quot;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; },&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;feedbackData&quot; : {&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;rating&quot; : {&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;type&quot; : &quot;SCALE_5&quot;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;value&quot; : &quot;5&quot;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; },&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;comment&quot; : &quot;For testing CFS post-deployment validation&quot;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;feedbackType&quot; : &quot;OTHERS&quot;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;language&quot; : &quot;en&quot;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; },&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;userAgent&quot; : {&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;browser&quot; : &quot;Apache-HttpClient/4.5.13 (Java/17.0.7)&quot;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; },&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;referrer&quot; : {&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;url&quot; : &quot;https://console.us-phoenix-1.oraclecloud.com/cfs/test&quot;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; },&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;userData&quot; : {&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;userId&quot; : &quot;Anonymous&quot;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;tenancyId&quot; : &quot;Anonymous&quot;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;isUserConsent&quot; : false&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; },&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;timeSubmitted&quot; : &quot;2023-07-11T20:35:46.553Z&quot;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;br&gt;&amp;nbsp; &amp;nbsp; ]&lt;br&gt;&lt;br&gt;&lt;div&gt;&quot;LIST&quot;: [&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;resource&quot;: &quot;FEEDBACK&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;url&quot;: &quot;http://localhost:24002/20210801/feedback?source=DOCUMENT&amp;amp;&amp;amp;component=cfs&amp;amp;&amp;amp;category=test&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;expected_response_code&quot;: [&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 200,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 404&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ],&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;payload&quot;: {}&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;" link="&quot;POST&quot;: [&#xa;      {&#xa;        &quot;resource&quot;: &quot;FEEDBACK&quot;,&#xa;        &quot;url&quot;: &quot;http://localhost:24002/20210801/feedback&quot;,&#xa;        &quot;expected_response_code&quot;: [&#xa;          200,&#xa;          409&#xa;        ],&#xa;        &quot;payload&quot;:  {&#xa;          &quot;product&quot; : {&#xa;            &quot;source&quot; : &quot;DOCUMENT&quot;,&#xa;            &quot;component&quot; : &quot;cfs&quot;,&#xa;            &quot;category&quot; : &quot;test&quot;,&#xa;            &quot;subCategory&quot; : &quot;Others&quot;,&#xa;            &quot;referenceId&quot; : &quot;Not Provided&quot;&#xa;          },&#xa;          &quot;feedbackData&quot; : {&#xa;            &quot;rating&quot; : {&#xa;              &quot;type&quot; : &quot;SCALE_5&quot;,&#xa;              &quot;value&quot; : &quot;5&quot;&#xa;            },&#xa;            &quot;comment&quot; : &quot;For testing CFS post-deployment validation&quot;,&#xa;            &quot;feedbackType&quot; : &quot;OTHERS&quot;,&#xa;            &quot;language&quot; : &quot;en&quot;&#xa;          },&#xa;          &quot;userAgent&quot; : {&#xa;            &quot;browser&quot; : &quot;Apache-HttpClient/4.5.13 (Java/17.0.7)&quot;&#xa;          },&#xa;          &quot;referrer&quot; : {&#xa;            &quot;url&quot; : &quot;https://console.us-phoenix-1.oraclecloud.com/cfs/test&quot;&#xa;          },&#xa;          &quot;userData&quot; : {&#xa;            &quot;userId&quot; : &quot;Anonymous&quot;,&#xa;            &quot;tenancyId&quot; : &quot;Anonymous&quot;,&#xa;            &quot;isUserConsent&quot; : false&#xa;          },&#xa;          &quot;timeSubmitted&quot; : &quot;2023-07-11T20:35:46.553Z&quot;&#xa;        }&#xa;      }&#xa;    ]," id="_6yHBerBYXMI28eIKHfv-24">
+          <mxCell parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1">
+            <mxGeometry height="910" width="910" x="215" y="550" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-25" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Design Principles for LLD&lt;div&gt;Used:&lt;br&gt;&lt;br&gt;kievStrategy,&lt;/div&gt;&lt;div&gt;metricsNamingStrategy&lt;/div&gt;&lt;div&gt;injector Singleton&lt;/div&gt;&lt;div&gt;Ehache : singleton&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="220" x="840" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-26" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Feedback Service&lt;div&gt;(SourceIP&amp;nbsp;&lt;/div&gt;&lt;div&gt;Throttling&lt;br&gt;Filter)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="630" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-29" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="EhCache&lt;br&gt;LFU&lt;br&gt;TTL:86400" vertex="1">
+          <mxGeometry height="100" width="60" x="470" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-30" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" value="&lt;div&gt;Stroring in Ehcache&lt;/div&gt;OpcRequestId:&lt;div&gt;Feedback&lt;/div&gt;&lt;div&gt;Params&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="80" x="420" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-32" edge="1" parent="1" source="_6yHBerBYXMI28eIKHfv-26" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" target="_6yHBerBYXMI28eIKHfv-29" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="640" y="240" as="sourcePoint" />
+            <mxPoint x="590" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-36" connectable="0" parent="_6yHBerBYXMI28eIKHfv-32" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;If Kiev Service&amp;nbsp;&lt;div&gt;is down&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.02" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-33" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="&lt;div&gt;&amp;nbsp;private static final long serialVersionUID = -5163403054288659366L;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String tenantId;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; // Product details&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String referenceId;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; @ToString.Exclude private String comment;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String feedbackType;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String locale;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; // Referrer details&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String url;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; // submittedTime&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private Long timeSubmitted;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; // apiKey&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String apiKey;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String id;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; // Product details&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String source;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String component;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String category;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String subCategory;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; // Feedback-data details&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String ratingType;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String ratingValue;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; // Retry token&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String opcRetryToken;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String opcRequestId;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; // User-Agent details&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String userAgent;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; // User-data details&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String userId;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private boolean isUserConsent;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String sessionId;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String userPersona;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String customerType;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String realm;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private String region;&lt;br&gt;&lt;br&gt;Create Feedback Params&lt;/div&gt;" vertex="1">
+          <mxGeometry height="695" width="695" x="210" y="1545" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-34" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="public class ListFeedbackParams extends BaseParams {&#xa;&#xa;&#xa;    private Integer limit;&#xa;    private String page;&#xa;    private String sortOrder;&#xa;    private String sortBy;&#xa;    private Long timeCreatedGreaterThanOrEqualTo;&#xa;    private Long timeCreatedLessThan;&#xa;    private List&lt;String&gt; components;&#xa;    private List&lt;String&gt; categories;&#xa;    private List&lt;String&gt; subCategories;&#xa;    private List&lt;String&gt; customerTypes;&#xa;}" vertex="1">
+          <mxGeometry height="250" width="250" x="100" y="-570" as="geometry" />
+        </mxCell>
+        <mxCell id="_6yHBerBYXMI28eIKHfv-35" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Why Language Service is needed, bcoz we want to identify PII data, userId,&lt;br&gt;creaditCardNumber&lt;br&gt;provided in comment" vertex="1">
+          <mxGeometry height="120" width="120" x="600" y="-230" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
