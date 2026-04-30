@@ -283,6 +283,9 @@
         <mxCell id="NBWsIPYUHiL5A0sF8qsy-80" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="How to copy artificats from one bucket to another?&lt;br&gt;We use CopyObjectAPI, it is async API &amp;amp; it returns workRequest id, which UXConfig Service use to poll therequest status" vertex="1">
           <mxGeometry height="90" width="352" x="605" y="-220" as="geometry" />
         </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-81" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="How the content of UXConfig.json is updated?&lt;br&gt;We don&#39;t have html css there we have assets &amp;amp; every asset has accosiated themeOcid which we get from branding plugin,&lt;div&gt;so in object storage we have bucket with that ocid &amp;amp; we go &amp;amp; change the assets there&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="400" x="600" y="-100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
