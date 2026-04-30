@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="AkgwmpxGx6pyY-AvH4je">
-    <mxGraphModel dx="1059" dy="694" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1006" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,38 +17,31 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bNIrGN_6ViZICjfYWnwT-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Branding Plugin UI" vertex="1">
-          <mxGeometry height="60" width="120" x="110" y="560" as="geometry" />
-        </mxCell>
-        <mxCell id="bNIrGN_6ViZICjfYWnwT-9" edge="1" parent="1" source="bNIrGN_6ViZICjfYWnwT-8" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="390" y="750" as="sourcePoint" />
-            <mxPoint x="170" y="700" as="targetPoint" />
-          </mxGeometry>
+          <mxGeometry height="60" width="120" x="110" y="550" as="geometry" />
         </mxCell>
         <mxCell id="bNIrGN_6ViZICjfYWnwT-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Splat" vertex="1">
-          <mxGeometry height="60" width="120" x="110" y="700" as="geometry" />
+          <mxGeometry height="60" width="120" x="110" y="680" as="geometry" />
         </mxCell>
         <mxCell id="bNIrGN_6ViZICjfYWnwT-11" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="UX Config Service" vertex="1">
-          <mxGeometry height="80" width="80" x="120" y="820" as="geometry" />
-        </mxCell>
-        <mxCell id="bNIrGN_6ViZICjfYWnwT-13" edge="1" parent="1" source="bNIrGN_6ViZICjfYWnwT-11" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="390" y="740" as="sourcePoint" />
-            <mxPoint x="160" y="960" as="targetPoint" />
-          </mxGeometry>
+          <mxGeometry height="70" width="70" x="130" y="920" as="geometry" />
         </mxCell>
         <mxCell id="bNIrGN_6ViZICjfYWnwT-15" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="UXConfig&lt;br&gt;Staging&lt;br&gt;Bucket" vertex="1">
-          <mxGeometry height="80" width="60" x="130" y="960" as="geometry" />
+          <mxGeometry height="80" width="60" x="135" y="1040" as="geometry" />
         </mxCell>
-        <mxCell id="bNIrGN_6ViZICjfYWnwT-18" edge="1" parent="1" source="bNIrGN_6ViZICjfYWnwT-15" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=27.5;entryPerimeter=0;" value="">
+        <mxCell id="bNIrGN_6ViZICjfYWnwT-18" edge="1" parent="1" source="bNIrGN_6ViZICjfYWnwT-15" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="bNIrGN_6ViZICjfYWnwT-19" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <Array as="points" />
             <mxPoint x="190" y="1020" as="sourcePoint" />
             <mxPoint x="370" y="1027.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-71" connectable="0" parent="bNIrGN_6ViZICjfYWnwT-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Async Calls" vertex="1">
+          <mxGeometry relative="1" x="-0.4857" y="4" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="bNIrGN_6ViZICjfYWnwT-19" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="UXConfig Preview&lt;br&gt;Bucket" vertex="1">
-          <mxGeometry height="80" width="60" x="370" y="1000" as="geometry" />
+          <mxGeometry height="80" width="60" x="370" y="1040" as="geometry" />
         </mxCell>
         <mxCell id="bNIrGN_6ViZICjfYWnwT-20" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="UXConfig&lt;br&gt;Production&lt;br&gt;Bucket" vertex="1">
           <mxGeometry height="80" width="60" x="460" y="930" as="geometry" />
@@ -56,10 +49,16 @@
         <mxCell id="bNIrGN_6ViZICjfYWnwT-21" edge="1" parent="1" source="bNIrGN_6ViZICjfYWnwT-15" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=27.5;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <Array as="points">
-              <mxPoint x="200" y="983" />
+              <mxPoint x="280" y="980" />
+              <mxPoint x="380" y="980" />
             </Array>
             <mxPoint x="370" y="910" as="sourcePoint" />
             <mxPoint x="460" y="982.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-70" connectable="0" parent="bNIrGN_6ViZICjfYWnwT-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Async Calls" vertex="1">
+          <mxGeometry relative="1" x="0.0329" y="3" as="geometry">
+            <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bNIrGN_6ViZICjfYWnwT-23" edge="1" parent="1" source="bNIrGN_6ViZICjfYWnwT-19" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
@@ -101,7 +100,7 @@
         <mxCell id="bNIrGN_6ViZICjfYWnwT-32" edge="1" parent="1" source="bNIrGN_6ViZICjfYWnwT-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=27.5;exitPerimeter=0;entryX=1;entryY=0;entryDx=0;entryDy=15;entryPerimeter=0;" target="bNIrGN_6ViZICjfYWnwT-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NBWsIPYUHiL5A0sF8qsy-1" edge="1" parent="1" source="bNIrGN_6ViZICjfYWnwT-10" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.605;entryY=-0.05;entryDx=0;entryDy=0;entryPerimeter=0;" target="bNIrGN_6ViZICjfYWnwT-11" value="">
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-1" edge="1" parent="1" source="bNIrGN_6ViZICjfYWnwT-10" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NBWsIPYUHiL5A0sF8qsy-44" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="390" y="770" as="sourcePoint" />
             <mxPoint x="172" y="810" as="targetPoint" />
@@ -217,12 +216,60 @@
         <mxCell id="NBWsIPYUHiL5A0sF8qsy-37" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" target="NBWsIPYUHiL5A0sF8qsy-38" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <Array as="points" />
-            <mxPoint x="960" y="120" as="sourcePoint" />
+            <mxPoint x="970" y="125" as="sourcePoint" />
             <mxPoint x="1060" y="120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NBWsIPYUHiL5A0sF8qsy-38" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-38" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="End USer" vertex="1">
           <mxGeometry height="50" width="60" x="1070" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-44" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="OCI APIGateway" vertex="1">
+          <mxGeometry height="80" width="80" x="130" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-50" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="bNIrGN_6ViZICjfYWnwT-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="870" />
+            </Array>
+            <mxPoint x="170" y="880" as="sourcePoint" />
+            <mxPoint x="440" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-52" edge="1" parent="1" source="bNIrGN_6ViZICjfYWnwT-8" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="bNIrGN_6ViZICjfYWnwT-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="790" as="sourcePoint" />
+            <mxPoint x="440" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-53" edge="1" parent="1" source="bNIrGN_6ViZICjfYWnwT-11" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="bNIrGN_6ViZICjfYWnwT-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="990" as="sourcePoint" />
+            <mxPoint x="440" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-57" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="OCI Functions are OCI public service not interna&lt;br&gt;Private Subnet" vertex="1">
+          <mxGeometry height="60" width="140" x="660" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-58" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="OCi APIGateway gives us the opportunity to mask the IPs&lt;br&gt;&lt;br&gt;Public Subnet" vertex="1">
+          <mxGeometry height="70" width="140" x="817" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="UXConfig uses OCI Authorization Model&lt;br&gt;&lt;br&gt;Caller needs to have right policies in their tenancies&lt;br&gt;to peform right operations&lt;br&gt;&lt;br&gt;AuthN/AuthZ is performed by Splat Proxy&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="330" x="590" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Access to Object Storage File is restricted to Functions running in UX Config tenancy&lt;br&gt;via Resource Principle" vertex="1">
+          <mxGeometry height="70" width="230" x="700" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-64" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Console reads manifest file (ux-config.json) from buckets that act as a entry point for&amp;nbsp; loading UXConfig/UXThemes" vertex="1">
+          <mxGeometry height="60" width="260" x="687" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-65" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="UXConfig creates empty manifest file when it bootstraps in new region , if manifest file is missing it will fallback to generic uxconfig which won&#39;t have OCI branding info like Oracle Logo" vertex="1">
+          <mxGeometry height="60" width="290" x="680" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-67" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Header,Footer,&lt;div&gt;LogoName,Logo,&lt;br&gt;CompanyName,&lt;/div&gt;&lt;div&gt;EmailFooter,&lt;br&gt;DocumentationFooter,&lt;/div&gt;&lt;div&gt;Home Page Notices&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="200" x="700" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Async way of uploading assets to any bucket&amp;nbsp;&lt;br&gt;(create workRequest to upload , but let&#39;s say there is problem with object storage , or internet is slow, worker requests will keep running, so we worker function , which terminates requests that run for more than 5 mins.&lt;br&gt;Trigger for worker function is canary" vertex="1">
+          <mxGeometry height="140" width="210" x="605" y="980" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
