@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="AkgwmpxGx6pyY-AvH4je">
-    <mxGraphModel dx="774" dy="1676" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1341" dy="2048" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -257,19 +257,19 @@
           <mxGeometry height="120" width="330" x="590" y="430" as="geometry" />
         </mxCell>
         <mxCell id="NBWsIPYUHiL5A0sF8qsy-63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Access to Object Storage File is restricted to Functions running in UX Config tenancy&lt;br&gt;via Resource Principle" vertex="1">
-          <mxGeometry height="70" width="230" x="700" y="580" as="geometry" />
+          <mxGeometry height="70" width="230" x="1271" y="340" as="geometry" />
         </mxCell>
         <mxCell id="NBWsIPYUHiL5A0sF8qsy-64" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Console reads manifest file (ux-config.json) from buckets that act as a entry point for&amp;nbsp; loading UXConfig/UXThemes" vertex="1">
-          <mxGeometry height="60" width="260" x="687" y="670" as="geometry" />
+          <mxGeometry height="60" width="260" x="1241" y="440" as="geometry" />
         </mxCell>
         <mxCell id="NBWsIPYUHiL5A0sF8qsy-65" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="UXConfig creates empty manifest file when it bootstraps in new region , if manifest file is missing it will fallback to generic uxconfig which won&#39;t have OCI branding info like Oracle Logo" vertex="1">
-          <mxGeometry height="60" width="290" x="680" y="760" as="geometry" />
+          <mxGeometry height="60" width="290" x="1241" y="530" as="geometry" />
         </mxCell>
         <mxCell id="NBWsIPYUHiL5A0sF8qsy-67" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Header,Footer,&lt;div&gt;LogoName,Logo,&lt;br&gt;CompanyName,&lt;/div&gt;&lt;div&gt;EmailFooter,&lt;br&gt;DocumentationFooter,&lt;/div&gt;&lt;div&gt;Home Page Notices&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="200" x="700" y="860" as="geometry" />
+          <mxGeometry height="100" width="200" x="1340" y="630" as="geometry" />
         </mxCell>
         <mxCell id="NBWsIPYUHiL5A0sF8qsy-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Async way of uploading assets to any bucket&amp;nbsp;&lt;br&gt;(create workRequest to upload , but let&#39;s say there is problem with object storage , or internet is slow, worker requests will keep running, so we worker function , which terminates requests that run for more than 5 mins.&lt;br&gt;Trigger for worker function is canary" vertex="1">
-          <mxGeometry height="140" width="210" x="605" y="980" as="geometry" />
+          <mxGeometry height="140" width="210" x="1310" y="800" as="geometry" />
         </mxCell>
         <mxCell id="NBWsIPYUHiL5A0sF8qsy-76" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;What happens when copy operation fails during publish?&lt;br&gt;Copy file &amp;amp; publish operation is modelled as single transaction&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;1.Copy all the assets&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;2.Updating the manifest file&lt;br&gt;Partial copy files will not be used manifest is updated, Retry on&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;failed pushed will overwrite any existing fiels&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="90" width="380" x="20" y="-330" as="geometry" />
@@ -285,6 +285,9 @@
         </mxCell>
         <mxCell id="NBWsIPYUHiL5A0sF8qsy-81" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="How the content of UXConfig.json is updated?&lt;br&gt;We don&#39;t have html css there we have assets &amp;amp; every asset has accosiated themeOcid which we get from branding plugin,&lt;div&gt;so in object storage we have directory with that ocid &amp;amp; we go &amp;amp; change the assets there &amp;amp; frontend will get json file can fetch the data from the specified location&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="430" x="570" y="-130" as="geometry" />
+        </mxCell>
+        <mxCell id="EhV8c7pBepqpBrJFcm9V-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;nbsp;&lt;br&gt;Connecting to object storage&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; totalOpenConnections(40)&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ttlInSeconds(4)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;maxRetries(5)&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;initialRetryDelayMilliseconds(100)&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;maxRetryDelayMilliseconds(1000)&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;defaultMaxConnectionsPerRoute(10);&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="230" x="610" y="880" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
