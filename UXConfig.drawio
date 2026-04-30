@@ -277,8 +277,8 @@
         <mxCell id="NBWsIPYUHiL5A0sF8qsy-77" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="How does service manage loss of data during upload/move operations?&lt;div&gt;Case1 Client can upload the file again if upload is failed&lt;/div&gt;&lt;div&gt;Case2: From copying one bucket to other, as it is a copy operation not move&lt;/div&gt;&lt;div&gt;so data will remain intact in source bucket&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="530" x="460" y="-340" as="geometry" />
         </mxCell>
-        <mxCell id="NBWsIPYUHiL5A0sF8qsy-78" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="How to achieve mutually exclusive write operation in object storage?&lt;div&gt;When two or more clients tries to update metadat.json file at a same time, once can overwrite changes done by other, it can lead to inconsistent state, we would rely on Optimistic Concurrency Control Strategy offered by Object Storage Every Object has an Etag associated with them&lt;br&gt;&lt;/div&gt;&lt;div&gt;GetObject , update the object, PutObject only if match etag with getObject&lt;/div&gt;&lt;div&gt;operation&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="420" x="50" y="-220" as="geometry" />
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-78" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="How to achieve mutually exclusive write operation in object storage?&lt;div&gt;When two or more clients tries to update metadat.json file at a same time, once can overwrite changes done by other, it can lead to inconsistent state, we would rely on Optimistic Concurrency Control Strategy offered by Object Storage Every Object has an Etag associated with them&lt;br&gt;&lt;/div&gt;&lt;div&gt;GetObject , update the object, PutObject only if match etag with getObject&lt;/div&gt;&lt;div&gt;operation&lt;br&gt;Operation fails with Etag mismatch then it return 409 conflict state&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="440" x="50" y="-220" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
