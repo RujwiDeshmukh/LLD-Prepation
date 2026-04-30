@@ -280,6 +280,9 @@
         <mxCell id="NBWsIPYUHiL5A0sF8qsy-78" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="How to achieve mutually exclusive write operation in object storage?&lt;div&gt;When two or more clients tries to update metadat.json file at a same time, once can overwrite changes done by other, it can lead to inconsistent state, we would rely on Optimistic Concurrency Control Strategy offered by Object Storage Every Object has an Etag associated with them&lt;br&gt;&lt;/div&gt;&lt;div&gt;GetObject , update the object, PutObject only if match etag with getObject&lt;/div&gt;&lt;div&gt;operation&lt;br&gt;Operation fails with Etag mismatch then it return 409 conflict state&lt;/div&gt;" vertex="1">
           <mxGeometry height="120" width="440" x="50" y="-220" as="geometry" />
         </mxCell>
+        <mxCell id="NBWsIPYUHiL5A0sF8qsy-80" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="How to copy artificats from one bucket to another?&lt;br&gt;We use CopyObjectAPI, it is async API &amp;amp; it returns workRequest id, which UXConfig Service use to poll therequest status" vertex="1">
+          <mxGeometry height="90" width="352" x="605" y="-220" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
